@@ -29,7 +29,7 @@
 
         oktaSignIn.renderEl({
                 el: '#okta-login-container'
-            }, function(){
+            }, function(res){
                 if (res.status === 'SUCCESS') {
                     res.session.setCookieAndRedirect(redirectUrl);
                 }
