@@ -29,6 +29,8 @@
 
         oktaSignIn.renderEl({
                 el: '#okta-login-container'
+            }, function(){
+                window.location.replace(redirectUrl);
             });
     </script>
 </body>
